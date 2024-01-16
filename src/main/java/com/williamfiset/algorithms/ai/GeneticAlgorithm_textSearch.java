@@ -97,7 +97,7 @@ public class GeneticAlgorithm_textSearch {
 
         // Verify if we're done. We could also check if we're happy with
         // the individual's current fitness value as a stopping condition.
-        if (child.str.equals(TARGET)) {
+        if (TARGET.equals(child.str)) {
           System.out.println("\nFOUND ANSWER: " + child + "\n");
           return;
         }

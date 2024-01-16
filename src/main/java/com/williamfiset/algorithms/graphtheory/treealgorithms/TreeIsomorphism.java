@@ -204,7 +204,7 @@ public class TreeIsomorphism {
 
     TreeNode root0 = rootTree(tree, 0);
 
-    if (!encode(root0).equals("(((())())(()())(()))")) {
+    if (!"(((())())(()())(()))".equals(encode(root0))) {
       System.out.println("Tree encoding is wrong: " + encode(root0));
     }
   }
