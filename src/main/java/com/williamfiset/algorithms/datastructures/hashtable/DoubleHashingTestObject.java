@@ -6,6 +6,7 @@
  */
 package com.williamfiset.algorithms.datastructures.hashtable;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class DoubleHashingTestObject implements SecondaryHash {
@@ -16,7 +17,7 @@ public class DoubleHashingTestObject implements SecondaryHash {
   String stringData = null;
 
   static long[] randomVector;
-  static Random R = new Random();
+  static Random R = new SecureRandom();
   static int MAX_VECTOR_SIZE = 10000;
 
   static {
