@@ -91,7 +91,7 @@ public class SubstringVerificationSuffixArray {
     public boolean contains(String substr) {
 
       if (substr == null) return false;
-      if (substr.equals("")) return true;
+      if ("".equals(substr)) return true;
 
       String suffix_str;
       int lo = 0, hi = N - 1;
