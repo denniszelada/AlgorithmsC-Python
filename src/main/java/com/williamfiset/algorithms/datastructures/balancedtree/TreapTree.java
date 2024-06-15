@@ -9,6 +9,7 @@ package com.williamfiset.algorithms.datastructures.balancedtree;
 
 import com.williamfiset.algorithms.datastructures.utils.TreePrinter;
 import java.awt.*;
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class TreapTree<T extends Comparable<T>> {
@@ -65,7 +66,7 @@ public class TreapTree<T extends Comparable<T>> {
   private int nodeCount = 0;
 
   public TreapTree() {
-    random = new Random();
+    random = new SecureRandom();
   }
 
   // returns the number of nodes in the tree

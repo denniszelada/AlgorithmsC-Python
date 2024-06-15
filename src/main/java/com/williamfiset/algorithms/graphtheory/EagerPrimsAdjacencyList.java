@@ -9,6 +9,7 @@
 package com.williamfiset.algorithms.graphtheory;
 
 import static java.lang.Math.*;
+import java.security.SecureRandom;
 
 import java.util.*;
 
@@ -350,7 +351,7 @@ public class EagerPrimsAdjacencyList {
     }
   }
 
-  static Random random = new Random();
+  static Random random = new SecureRandom();
 
   private static void lazyVsEagerAnalysis() {
     int n = 5000;
