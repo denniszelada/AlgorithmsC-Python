@@ -1,10 +1,7 @@
 package com.williamfiset.algorithms.dp.examples.scenes;
 
-/**
- * Solution to the Mountain Scenes problem (https://open.kattis.com/problems/scenes)
- *
- * <p>Solution by: William Fiset
- */
+
+import io.github.pixee.security.BoundedLineReader;
 import java.io.*;
 import java.util.*;
 
@@ -17,7 +14,7 @@ public class Scenes {
   static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
   public static void main(String[] args) throws IOException {
-    String[] ln = br.readLine().split(" ");
+    String[] ln = BoundedLineReader.readLine(br, 5_000_000).split(" ");
     N = Integer.parseInt(ln[0]); // Total ribbon length
     W = Integer.parseInt(ln[1]); // Width
     H = Integer.parseInt(ln[2]); // Height
