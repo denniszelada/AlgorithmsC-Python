@@ -1,6 +1,7 @@
 package com.williamfiset.algorithms.datastructures.set;
 
 import static com.google.common.truth.Truth.assertThat;
+import java.security.SecureRandom;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,7 +35,7 @@ class ConstObj {
 
 public class HSetTest {
 
-  static Random r = new Random();
+  static Random r = new SecureRandom();
 
   static final int LOOPS = 100;
   static final int TEST_SZ = 1000;

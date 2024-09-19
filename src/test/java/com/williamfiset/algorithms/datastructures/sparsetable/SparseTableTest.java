@@ -1,6 +1,7 @@
 package com.williamfiset.algorithms.datastructures.sparsetable;
 
 import static com.google.common.truth.Truth.assertThat;
+import java.security.SecureRandom;
 
 import java.util.*;
 import org.junit.jupiter.api.*;
@@ -163,6 +164,6 @@ public class SparseTableTest {
   }
 
   private static long[] genRandArray(int n, int lo, int hi) {
-    return new Random().longs(n, lo, hi).toArray();
+    return new SecureRandom().longs(n, lo, hi).toArray();
   }
 }

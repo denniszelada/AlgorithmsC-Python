@@ -11,10 +11,11 @@
  */
 package com.williamfiset.algorithms.sorting;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class QuickSort3 implements InplaceSort {
-  private static Random random = new Random();
+  private static Random random = new SecureRandom();
 
   @Override
   public void sort(int[] values) {
