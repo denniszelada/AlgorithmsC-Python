@@ -1,13 +1,14 @@
 package com.williamfiset.algorithms.sorting;
 
 import static com.google.common.truth.Truth.assertThat;
+import java.security.SecureRandom;
 
 import java.util.Arrays;
 import java.util.Random;
 import org.junit.jupiter.api.Test;
 
 public class RadixSortTest {
-  static Random random = new Random();
+  static Random random = new SecureRandom();
 
   @Test
   public void testGetMax() {

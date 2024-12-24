@@ -11,7 +11,7 @@ import org.junit.jupiter.api.*;
 public class BloomFilterTest {
 
   static final SecureRandom random = new SecureRandom();
-  static final Random rand = new Random();
+  static final Random rand = new SecureRandom();
 
   static final int MIN_RAND_NUM = -1000;
   static final int MAX_RAND_NUM = +1000;

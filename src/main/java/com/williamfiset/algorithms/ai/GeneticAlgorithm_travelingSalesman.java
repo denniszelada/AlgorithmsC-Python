@@ -6,11 +6,12 @@
  */
 package com.williamfiset.algorithms.ai;
 
+import java.security.SecureRandom;
 import java.util.*;
 
 public class GeneticAlgorithm_travelingSalesman {
 
-  static final Random RANDOM = new Random();
+  static final Random RANDOM = new SecureRandom();
 
   // Genetic algorithm parameters (P = Population)
   static final int P = 250;
@@ -243,7 +244,7 @@ public class GeneticAlgorithm_travelingSalesman {
   static class Individual {
 
     int[] cities;
-    static Random RANDOM = new Random();
+    static Random RANDOM = new SecureRandom();
 
     // Constructs a random individual
     public Individual(int n) {

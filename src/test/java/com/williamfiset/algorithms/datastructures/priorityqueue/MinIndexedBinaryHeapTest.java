@@ -1,6 +1,7 @@
 package com.williamfiset.algorithms.datastructures.priorityqueue;
 
 import static com.google.common.truth.Truth.assertThat;
+import java.security.SecureRandom;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.ArrayList;
@@ -277,7 +278,7 @@ public class MinIndexedBinaryHeapTest {
   }
 
   static int[] genRandArray(int n, int lo, int hi) {
-    return new Random().ints(n, lo, hi).toArray();
+    return new SecureRandom().ints(n, lo, hi).toArray();
   }
 
   static void sortPairsByValue(Integer[][] pairs) {

@@ -8,11 +8,12 @@
  */
 package com.williamfiset.algorithms.ai;
 
+import java.security.SecureRandom;
 import java.util.*;
 
 public class GeneticAlgorithm_knapsack_01 {
 
-  static final Random RANDOM = new Random();
+  static final Random RANDOM = new SecureRandom();
 
   // Genetic algorithm parameters (P = Population)
   static final int P = 500;
