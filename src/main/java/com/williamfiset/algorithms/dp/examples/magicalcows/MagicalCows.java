@@ -1,19 +1,7 @@
 package com.williamfiset.algorithms.dp.examples.magicalcows;
 
-/**
- * Solution to Magical Cows (https://open.kattis.com/problems/magicalcows)
- *
- * <p>Problem author: Graeme Zinck
- *
- * <p>Solution by: William Fiset
- *
- * <p>The main thing to realize with magical cows is that the total number of cows allowed on each
- * farm is bounded by C which is less than or equal to 1000, so you can keep track of all cows in a
- * frequency table for each farm size.
- *
- * <p>NOTE: You can ignore taking the floor/ceiling of the number of cows on a split since when you
- * double the number of cows you always get an even number.
- */
+
+import io.github.pixee.security.BoundedLineReader;
 import java.io.*;
 import java.util.*;
 
@@ -25,7 +13,7 @@ public class MagicalCows {
   static final int MAX_DAYS = 50;
 
   public static void main(String[] args) throws IOException {
-    String[] line = br.readLine().split(" ");
+    String[] line = BoundedLineReader.readLine(br, 5_000_000).split(" ");
 
     // The maximum number of cows on a farm
     final int C = Integer.parseInt(line[0]);
@@ -41,7 +29,7 @@ public class MagicalCows {
 
     // Count the initial frequency of farms of different sizes
     for (int i = 0; i < N; i++) {
-      int cows = Integer.parseInt(br.readLine());
+      int cows = Integer.parseInt(BoundedLineReader.readLine(br, 5_000_000));
       dp[0][cows]++;
     }
 
@@ -61,7 +49,7 @@ public class MagicalCows {
 
     // Answer each query
     for (int i = 0; i < M; i++) {
-      int day = Integer.parseInt(br.readLine());
+      int day = Integer.parseInt(BoundedLineReader.readLine(br, 5_000_000));
       System.out.println(query(dp, day));
     }
   }
