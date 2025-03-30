@@ -18,10 +18,11 @@
  */
 package com.williamfiset.algorithms.datastructures.skiplist;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 class SkipList {
-  private Random rand = new Random();
+  private Random rand = new SecureRandom();
   private int height;
   private Node head;
   private Node tail;

@@ -6,6 +6,7 @@
  */
 package com.williamfiset.algorithms.ai;
 
+import java.security.SecureRandom;
 import java.util.*;
 
 public class GeneticAlgorithm_textSearch {
@@ -16,7 +17,7 @@ public class GeneticAlgorithm_textSearch {
   ;
   static final int TL = TARGET.length();
 
-  static final Random RANDOM = new Random();
+  static final Random RANDOM = new SecureRandom();
 
   // Genetic algorithm parameters
   static final int MAX_EPOCH = 100000;

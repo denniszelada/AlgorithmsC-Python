@@ -9,7 +9,7 @@ import org.junit.jupiter.api.*;
 public class SuffixArrayTest {
 
   static final SecureRandom random = new SecureRandom();
-  static final Random rand = new Random();
+  static final Random rand = new SecureRandom();
 
   static final int LOOPS = 1000;
   static final int TEST_SZ = 40;
