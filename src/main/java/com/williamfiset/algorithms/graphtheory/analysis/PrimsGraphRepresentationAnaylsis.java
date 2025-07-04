@@ -94,6 +94,7 @@ Matrix: 154691124 nanos
 package com.williamfiset.algorithms.graphtheory.analysis;
 
 import static java.lang.Math.*;
+import java.security.SecureRandom;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -334,7 +335,7 @@ public class PrimsGraphRepresentationAnaylsis {
     densityTest();
   }
 
-  static Random random = new Random();
+  static Random random = new SecureRandom();
 
   private static void densityTest() throws InterruptedException {
     String rows = "", header = "edge density percentage, adj list, adj matrix\n";

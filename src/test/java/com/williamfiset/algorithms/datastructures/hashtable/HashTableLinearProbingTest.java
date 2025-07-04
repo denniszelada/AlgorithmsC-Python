@@ -1,6 +1,7 @@
 package com.williamfiset.algorithms.datastructures.hashtable;
 
 import static com.google.common.truth.Truth.assertThat;
+import java.security.SecureRandom;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.*;
@@ -34,7 +35,7 @@ public class HashTableLinearProbingTest {
     }
   }
 
-  static final Random RANDOM = new Random();
+  static final Random RANDOM = new SecureRandom();
   static int LOOPS, MAX_SIZE, MAX_RAND_NUM;
 
   static {

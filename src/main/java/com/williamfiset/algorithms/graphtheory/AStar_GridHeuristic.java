@@ -1,6 +1,7 @@
 /** NOTE: This algorithm is still a work in progress! See issue #18 to track progress. */
 package com.williamfiset.algorithms.graphtheory;
 
+import java.security.SecureRandom;
 import java.util.*;
 
 public class AStar_GridHeuristic {
@@ -127,7 +128,7 @@ public class AStar_GridHeuristic {
   // Run a random test between A* and Dijkstra
   public static void main(String[] args) {
 
-    Random RANDOM = new Random();
+    Random RANDOM = new SecureRandom();
 
     int n = 20 * 20;
     Map<Integer, List<Edge>> graph = new HashMap<>();

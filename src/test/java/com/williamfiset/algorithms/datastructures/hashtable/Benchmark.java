@@ -5,6 +5,7 @@
  */
 package com.williamfiset.algorithms.datastructures.hashtable;
 
+import java.security.SecureRandom;
 import java.util.*;
 
 public class Benchmark {
@@ -16,7 +17,7 @@ public class Benchmark {
   static int[] values = new int[N];
   static DoubleHashingTestObject[] doubleHashKeys = new DoubleHashingTestObject[N];
 
-  static Random RANDOM = new Random();
+  static Random RANDOM = new SecureRandom();
 
   static {
     for (int i = 0; i < N; i++) {

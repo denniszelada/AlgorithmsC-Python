@@ -1,6 +1,7 @@
 package com.williamfiset.algorithms.strings;
 
 import static com.google.common.truth.Truth.assertThat;
+import java.security.SecureRandom;
 import static java.util.Objects.isNull;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class BoyerMooreStringSearchTest {
   @BeforeEach
   public void setup() {
     underTest = new BoyerMooreStringSearch();
-    random = new Random();
+    random = new SecureRandom();
   }
 
   @Test
